@@ -1,5 +1,5 @@
 {
-  "name": "@gullocean/vue-components",
+  "name": "gullocean-vue-components",
   "version": "1.0.0",
   "description": "This is a private npm package.",
   "main": "index.js",
