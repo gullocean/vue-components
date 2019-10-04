@@ -1,4 +1,4 @@
-import MyText from './MyText'
+import MyText from './MyText.vue'
 
 export default {
   Mytext

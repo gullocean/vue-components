@@ -4,21 +4,21 @@ import node from 'rollup-plugin-node-resolve'
 import vue from 'rollup-plugin-vue'
 
 export default {
-  input: 'src/atoms/myText.vue',
+  input: 'src/wrapper.js',
   external: [],
   output: [
     {
       format: 'esm',
-      file: 'dist/myText.esm.js',
+      file: 'dist/index.esm.js',
     },
     {
       format: 'umd',
-      name: 'vueMyText',
-      file: 'dist/myText.umd.js',
+      name: 'vueComponents',
+      file: 'dist/index.umd.js',
     },
     {
       format: 'cjs',
-      file: 'dist/myText.cjs.js',
+      file: 'dist/index.cjs.js',
     },
   ],
   plugins: [common(), node(), vue(), buble()]

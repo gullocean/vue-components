@@ -1,10 +1,10 @@
 {
   "name": "gullocean-vue-components",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "This is a private npm package.",
-  "main": "dist/myText.cjs.js",
-  "module": "dist/myText.esm.js",
-  "source": "src/myText.vue",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "source": "src/index.js",
   "scripts": {
     "build": "rollup -c",
     "prepublishOnly": "npm run build"
