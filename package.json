@@ -1,10 +1,13 @@
 {
   "name": "gullocean-vue-components",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "This is a private npm package.",
-  "main": "index.js",
+  "main": "dist/myText.cjs.js",
+  "module": "dist/myText.esm.js",
+  "source": "src/myText.vue",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "rollup -c",
+    "prepublishOnly": "npm run build"
   },
   "author": "gullocean",
   "license": "ISC",
@@ -15,5 +18,13 @@
   "bugs": {
     "url": "https://github.com/gullocean/vue-components/issues"
   },
-  "homepage": "https://github.com/gullocean/vue-components#readme"
+  "homepage": "https://github.com/gullocean/vue-components#readme",
+  "devDependencies": {
+    "rollup": "^1.23.0",
+    "rollup-plugin-buble": "^0.19.8",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-vue": "^5.0.1",
+    "vue-template-compiler": "^2.6.10"
+  }
 }
