@@ -1,7 +1,5 @@
-import atoms from './atoms'
-import molecules from './molecules'
+import MyText from './atoms/MyText.vue'
 
-export default {
-  atoms,
-  molecules
+export {
+  MyText
 }
