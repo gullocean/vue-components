@@ -1,5 +1,5 @@
-import atoms from './components/atoms'
-import molecules from './components/molecules'
+import atoms from './src/components/atoms'
+import molecules from './src/components/molecules'
 
 export default {
   atoms,
